@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== LOADER ===== -->
+    <div id="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <span class="logo-text">My<span class="accent">Portfolio</span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#certificates" class="nav-link">Certificates</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">John<span class="accent"> Myco</span></h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title-prefix"> </span>
+                    <span class="typed-text" id="typedText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    A passionate developer who loves building beautiful, 
+                    functional, and user-friendly digital experiences.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="image-border"></div>
+                    <!-- REPLACE 'your-photo.jpg' WITH YOUR IMAGE FILE -->
+                    <img src="images\profile.png" alt="Profile Photo" class="profile-img" id="profileImg"
+                         onerror="this.src='https://via.placeholder.com/400x400/6c63ff/ffffff?text=Your+Photo'">
+                    <div class="image-dots"></div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-img-wrapper">
+                        <!-- REPLACE 'about-photo.jpg' WITH YOUR IMAGE FILE -->
+                        <img src="images\profile.png" alt="About Me" class="about-img"
+                             onerror="this.src='https://via.placeholder.com/450x500/6c63ff/ffffff?text=About+Me'">
+                        <div class="about-experience">
+                            <span class="exp-number">1+</span>
+                            <span class="exp-text">Years of<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Who Am I?</h3>
+                    <p>
+                        Hi! I'm <strong>Montemayor, John Myco M.</strong>, a passionate and dedicated developer 
+                        based in <strong>Guagua National Colleges inc</strong>. I specialize in building modern 
+                        web applications and have a strong foundation in both front-end and 
+                        back-end technologies.
+                    </p>
+                    <p>
+                        I'm currently studying <strong>Bachelor in Science of Information Technology</strong> at 
+                        <strong>Guagua National Colleges inc</strong>. I love turning ideas into 
+                        reality through clean, efficient code and creative design.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-user"></i> Name:</span>
+                            <span class="info-value">Montemayor John Myco M.</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-envelope"></i> Email:</span>
+                            <span class="info-value">johnmyco.gnc@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-map-marker-alt"></i> Address:</span>
+                            <span class="info-value">San Francisco Lubao Pampanga</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-graduation-cap"></i> Education:</span>
+                            <span class="info-value">Bachelor in Science of Information Technology</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="accent">Skills</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-cards">
+
+                    <!-- HTML -->
+                    <div class="skill-card" data-aos="fade-up">
+                        <div class="skill-icon html">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML5</h3>
+                        <p>Semantic markup, accessibility, and modern HTML standards.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-label">
+                                <span>Proficiency</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="skill-card" data-aos="fade-up">
+                        <div class="skill-icon css">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS3</h3>
+                        <p>Responsive design, animations, Flexbox, and Grid layouts.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-label">
+                                <span>Proficiency</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skill-card" data-aos="fade-up">
+                        <div class="skill-icon js">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>DOM manipulation, ES6+, APIs, and interactive web apps.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-label">
+                                <span>Proficiency</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="skill-card" data-aos="fade-up">
+                        <div class="skill-icon python">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <p>Scripting, automation, data processing, and backend development.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-label">
+                                <span>Proficiency</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Networking -->
+                    <div class="skill-card" data-aos="fade-up">
+                        <div class="skill-icon networking">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Networking</h3>
+                        <p>TCP/IP, network configuration, security, and troubleshooting.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-label">
+                                <span>Proficiency</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIGMA -->
+                    <div class="skill-card">
+                        <div class="skill-icon figma">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <h3>Figma</h3>
+                        <p>UI/UX design, prototyping, wireframing, and creating interactive design systems.</p>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-label">
+                                <span>Proficiency</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="accent">Projects</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="networking">Networking</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+
+                <!-- PROJECT 1 - REPLACE DETAILS -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <!-- REPLACE 'project1.jpg' WITH YOUR PROJECT IMAGE -->
+                        <img src="project1.jpg" alt="Project 1"
+                             onerror="this.src='https://via.placeholder.com/400x250/6c63ff/ffffff?text=Project+1'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Web</span>
+                        <h3>Project Title 1</h3>
+                        <p>Brief description of your project. What it does and what technologies were used.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2 - REPLACE DETAILS -->
+                <div class="project-card" data-category="python">
+                    <div class="project-img">
+                        <!-- REPLACE 'project2.jpg' WITH YOUR PROJECT IMAGE -->
+                        <img src="project2.jpg" alt="Project 2"
+                             onerror="this.src='https://via.placeholder.com/400x250/ff6584/ffffff?text=Project+2'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Python</span>
+                        <h3>Project Title 2</h3>
+                        <p>Brief description of your project. What it does and what technologies were used.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3 - REPLACE DETAILS -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <!-- REPLACE 'project3.jpg' WITH YOUR PROJECT IMAGE -->
+                        <img src="project3.jpg" alt="Project 3"
+                             onerror="this.src='https://via.placeholder.com/400x250/43b89c/ffffff?text=Project+3'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Web</span>
+                        <h3>Project Title 3</h3>
+                        <p>Brief description of your project. What it does and what technologies were used.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4 - REPLACE DETAILS -->
+                <div class="project-card" data-category="networking">
+                    <div class="project-img">
+                        <!-- REPLACE 'project4.jpg' WITH YOUR PROJECT IMAGE -->
+                        <img src="project4.jpg" alt="Project 4"
+                             onerror="this.src='https://via.placeholder.com/400x250/f7b731/ffffff?text=Project+4'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Networking</span>
+                        <h3>Project Title 4</h3>
+                        <p>Brief description of your project. What it does and what technologies were used.</p>
+                        <div class="project-tags">
+                            <span>Networking</span>
+                            <span>Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ADD MORE PROJECTS FOLLOWING THE SAME STRUCTURE -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATES SECTION ===== -->
+    <section class="certificates section" id="certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="accent">Certificates</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">My achievements and certifications</p>
+            </div>
+            <div class="certificates-grid">
+
+                <!-- CERTIFICATE 1 - REPLACE DETAILS -->
+                <div class="cert-card">
+                    <div class="cert-img-wrapper">
+                        <!-- REPLACE 'cert1.jpg' WITH YOUR CERTIFICATE IMAGE -->
+                        <img src="images/PYTHON ESSENTIALS 2 CERT.png" alt="Certificate 1" class="cert-img"
+                             onerror="this.src='https://via.placeholder.com/400x280/6c63ff/ffffff?text=Certificate+1'">
+                        <div class="cert-overlay">
+                            <button class="cert-view-btn" onclick="openCertModal('cert1.jpg', 'Certificate Title 1', 'Issuing Organization', '2024')">
+                                <i class="fas fa-expand"></i> View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Certificate Title 1</h3>
+                        <p class="cert-issuer"><i class="fas fa-award"></i> PYTHONE ESSENTIALS 2</p>
+                        <p class="cert-date"><i class="fas fa-calendar"></i> 2025</p>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATE 2 - REPLACE DETAILS -->
+                <div class="cert-card">
+                    <div class="cert-img-wrapper">
+                        <!-- REPLACE 'cert2.jpg' WITH YOUR CERTIFICATE IMAGE -->
+                        <img src="images/IT ESSENTIALS CERT.png" alt="Certificate 2" class="cert-img"
+                             onerror="this.src='https://via.placeholder.com/400x280/ff6584/ffffff?text=Certificate+2'">
+                        <div class="cert-overlay">
+                            <button class="cert-view-btn" onclick="openCertModal('cert2.jpg', 'Certificate Title 2', 'Issuing Organization', '2024')">
+                                <i class="fas fa-expand"></i> View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Certificate Title 2</h3>
+                        <p class="cert-issuer"><i class="fas fa-award"></i> IT ESSENTIALS: PC HARDWARE AND SOFTWARE</p>
+                        <p class="cert-date"><i class="fas fa-calendar"></i> 2024</p>
+                    </div>
+                </div>
+
+                <!-- CERTIFICATE 3 - REPLACE DETAILS -->
+                <div class="cert-card">
+                    <div class="cert-img-wrapper">
+                        <!-- REPLACE 'cert3.jpg' WITH YOUR CERTIFICATE IMAGE -->
+                        <img src="images/NETWOKING CERT.png" alt="Certificate 3" class="cert-img"
+                             onerror="this.src='https://via.placeholder.com/400x280/43b89c/ffffff?text=Certificate+3'">
+                        <div class="cert-overlay">
+                            <button class="cert-view-btn" onclick="openCertModal('cert3.jpg', 'Certificate Title 3', 'Issuing Organization', '2023')">
+                                <i class="fas fa-expand"></i> View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Certificate Title 3</h3>
+                        <p class="cert-issuer"><i class="fas fa-award"></i> NETWORKING</p>
+                        <p class="cert-date"><i class="fas fa-calendar"></i> 2026</p>
+                    </div>
+                </div>
+
+                <!-- ADD MORE CERTIFICATES FOLLOWING THE SAME STRUCTURE -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATE MODAL ===== -->
+    <div class="cert-modal" id="certModal">
+        <div class="cert-modal-overlay" onclick="closeCertModal()"></div>
+        <div class="cert-modal-content">
+            <button class="cert-modal-close" onclick="closeCertModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="Certificate" id="certModalImg">
+            <div class="cert-modal-info">
+                <h3 id="certModalTitle"></h3>
+                <p id="certModalIssuer"></p>
+                <p id="certModalDate"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Let's work together!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Feel free to reach out to me for any project, collaboration, or just to say hi! I'll get back to you as soon as possible.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Email</span>
+                                <a href="mailto:your@email.com">johnmyco.gnc@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Phone</span>
+                                <a href="tel:+1234567890">09700386280</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Address</span>
+                                <p>San Francico Lubao Pampanga</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-tag"></i>
+                                <input type="text" id="subject" name="subject" placeholder="Message Subject" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fas fa-comment"></i>
+                                <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+                            <span class="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+                        </button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">My<span class="accent">Portfolio</span></div>
+            <p>Designed & Built with <i class="fas fa-heart" style="color:#ff6584"></i> by Your Name</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
